@@ -12,3 +12,4 @@ C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\refint\practice C#.d
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.pdb
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\ref\practice C#.dll
+c:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.sourcelink.json
