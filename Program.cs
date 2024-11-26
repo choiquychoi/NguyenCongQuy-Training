@@ -2,19 +2,21 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        // Declare constants
-        const float Pi = 3.14f; // Value of Pi
-        const int DaysInWeek = 7; // Number of days in a week
-        const string AppName = "My Application"; // Application name
+        int a = 10, b = 20;
 
-        // Print constants
-        Console.WriteLine("Value of Pi: " + Pi);
-        Console.WriteLine("Number of days in a week: " + DaysInWeek);
-        Console.WriteLine("Application Name: " + AppName);
+        // Biểu thức toán học
+        int sum = a + b;
 
-        // Attempt to modify constant (will cause error)
-        // Pi = 3.1415f; // Error: Cannot assign to 'Pi' because it is a constant
+        // Biểu thức logic
+        bool isGreater = a > b;
+
+        // Biểu thức điều kiện
+        string result = isGreater ? "A lớn hơn B" : "B lớn hơn hoặc bằng A";
+
+        // Gọi phương thức
+        Console.WriteLine($"Tổng: {sum}");
+        Console.WriteLine($"Kết quả: {result}");
     }
 }
