@@ -2,21 +2,16 @@
 
 class Program
 {
-    static void Main()
+    // Method that takes parameters and returns a value
+    static int AddNumbers(int a, int b)
     {
-        int a = 10, b = 20;
+        return a + b;  // Add a and b, then return the result
+    }
 
-        // Biểu thức toán học
-        int sum = a + b;
-
-        // Biểu thức logic
-        bool isGreater = a > b;
-
-        // Biểu thức điều kiện
-        string result = isGreater ? "A lớn hơn B" : "B lớn hơn hoặc bằng A";
-
-        // Gọi phương thức
-        Console.WriteLine($"Tổng: {sum}");
-        Console.WriteLine($"Kết quả: {result}");
+    static void Main(string[] args)
+    {
+        // Call the AddNumbers method
+        int sum = AddNumbers(5, 7);
+        Console.WriteLine("The sum is: " + sum);
     }
 }
