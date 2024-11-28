@@ -2,16 +2,28 @@
 
 class Program
 {
-    // Method that takes parameters and returns a value
-    static int AddNumbers(int a, int b)
+    // Phương thức ChangeValue trả về giá trị mới, không thay đổi biến ban đầu
+    static int ChangeValue(int number)
     {
-        return a + b;  // Add a and b, then return the result
+        number = 20; // Thay đổi giá trị của number trong phương thức
+        Console.WriteLine("Inside method: " + number);
+        return number; // Trả về giá trị mới
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        // Call the AddNumbers method
-        int sum = AddNumbers(5, 7);
-        Console.WriteLine("The sum is: " + sum);
+        int num = 10; // Giữ nguyên giá trị ban đầu là 10
+        Console.WriteLine("Before ChangeValue in Main: " + num);
+        
+        // Không thay đổi giá trị của num trong Main
+        ChangeValue(num); // Thực hiện thay đổi giá trị trong phương thức
+        Console.WriteLine("After ChangeValue in Main: " + num); // Giá trị vẫn là 10
+    }
+
+    static void tester()
+    {
+        int result = 0; // Khởi tạo giá trị cho result
+        result = ChangeValue(result); // Lấy giá trị trả về từ phương thức ChangeValue
+        Console.WriteLine("Value in tester: " + result); // In ra giá trị đã thay đổi
     }
 }
