@@ -1,15 +1,15 @@
-﻿using System;
+﻿    int[] num;        //Khai báo mảng array                                 
+    num = new int[] { 5, 10, 15, 20, 25, 30 };  // Khởi tạo mảng
 
-class Program
-{
-    static int AddNumbers(int a, int b)
+    for (int k =0; k < num.Length; k++)
     {
-        return a + b; // Return the sum of a and b
+        Console.WriteLine(num[k]);
     }
 
-    static void Main()
+    string[] cars;    //Khai báo mảng array
+    cars = new string[] { "Toyota", "Huydai", "Mazda", "Ford", "Honda" };  // Khởi tạo mảng
+
+    foreach (string v_car in cars)
     {
-        int result = AddNumbers(5, 10); // Store the returned value in the variable result
-        Console.WriteLine("The sum is: " + result); // Display the result
+        Console.WriteLine(v_car);
     }
-}
