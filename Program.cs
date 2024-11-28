@@ -2,15 +2,14 @@
 
 class Program
 {
-    static void Initialize(out int number)
+    static int AddNumbers(int a, int b)
     {
-        number = 100; // Assign a value
+        return a + b; // Return the sum of a and b
     }
 
     static void Main()
     {
-        int num; // No need to initialize
-        Initialize(out num); // Pass by reference with `out`
-        Console.WriteLine("Initialized value: " + num);
+        int result = AddNumbers(5, 10); // Store the returned value in the variable result
+        Console.WriteLine("The sum is: " + result); // Display the result
     }
 }
