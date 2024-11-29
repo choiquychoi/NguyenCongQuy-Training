@@ -1,15 +1,17 @@
-﻿    int[] num;        //Khai báo mảng array                                 
-    num = new int[] { 5, 10, 15, 20, 25, 30 };  // Khởi tạo mảng
+﻿using System;
+using System.Linq;
 
-    for (int k =0; k < num.Length; k++)
+namespace ihoclaptrinh
+{
+    class Program
     {
-        Console.WriteLine(num[k]);
+        static void Main(string[] args)
+        {
+            int[] num1 = { 5, 10, 15, 20, 25, 30 };
+            Console.WriteLine("Max Value is: " + num1.Max());
+            Console.WriteLine("Min value is: " + num1.Min());
+            Console.WriteLine("Sum all Values in array is: " + num1.Sum());
+            Console.ReadKey();
+        }   
     }
-
-    string[] cars;    //Khai báo mảng array
-    cars = new string[] { "Toyota", "Huydai", "Mazda", "Ford", "Honda" };  // Khởi tạo mảng
-
-    foreach (string v_car in cars)
-    {
-        Console.WriteLine(v_car);
-    }
+}
