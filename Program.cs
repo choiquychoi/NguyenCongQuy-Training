@@ -7,13 +7,20 @@ class Program
     {
         string filePath = "example.txt";
 
-        // Create and write to the file using StreamWriter
-        using (StreamWriter writer = new StreamWriter(filePath))
+        // Check if the file exists before attempting to read
+        if (File.Exists(filePath))
         {
-            writer.WriteLine("Hello, World!"); // Write a simple text
-            writer.WriteLine("This is a new line in the file."); // Add another line
+            // Read the file content using StreamReader
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                string content = reader.ReadToEnd(); // Read the entire file
+                Console.WriteLine("File content:"); 
+                Console.WriteLine(content); // Display the content
+            }
         }
-
-        Console.WriteLine("File has been written successfully."); // Inform user about the completion
+        else
+        {
+            Console.WriteLine("The file does not exist!"); // Inform user if the file is missing
+        }
     }
 }
