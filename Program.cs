@@ -7,15 +7,27 @@ class Program
     {
         string filePath = "example.bin";
 
-        // Open or create a binary file to write data
-        using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.Create)))
+        // Check if the binary file exists before attempting to read
+        if (File.Exists(filePath))
         {
-            writer.Write(42); // Write an integer
-            writer.Write(3.14); // Write a double
-            writer.Write(true); // Write a boolean
-            writer.Write("Binary data"); // Write a string
-        }
+            // Open and read the binary file
+            using (BinaryReader reader = new BinaryReader(File.Open(filePath, FileMode.Open)))
+            {
+                int number = reader.ReadInt32(); // Read an integer
+                double value = reader.ReadDouble(); // Read a double
+                bool flag = reader.ReadBoolean(); // Read a boolean
+                string text = reader.ReadString(); // Read a string
 
-        Console.WriteLine("Binary file has been written successfully."); // Inform user about the completion
+                // Display the read data
+                Console.WriteLine($"Integer: {number}");
+                Console.WriteLine($"Double: {value}");
+                Console.WriteLine($"Boolean: {flag}");
+                Console.WriteLine($"String: {text}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("The binary file does not exist!"); // Inform user if the file is missing
+        }
     }
 }
