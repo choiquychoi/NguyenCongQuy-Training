@@ -5,22 +5,17 @@ class Program
 {
     static void Main()
     {
-        string filePath = "example.txt";
+        string filePath = "example.bin";
 
-        // Check if the file exists before attempting to read
-        if (File.Exists(filePath))
+        // Open or create a binary file to write data
+        using (BinaryWriter writer = new BinaryWriter(File.Open(filePath, FileMode.Create)))
         {
-            // Read the file content using StreamReader
-            using (StreamReader reader = new StreamReader(filePath))
-            {
-                string content = reader.ReadToEnd(); // Read the entire file
-                Console.WriteLine("File content:"); 
-                Console.WriteLine(content); // Display the content
-            }
+            writer.Write(42); // Write an integer
+            writer.Write(3.14); // Write a double
+            writer.Write(true); // Write a boolean
+            writer.Write("Binary data"); // Write a string
         }
-        else
-        {
-            Console.WriteLine("The file does not exist!"); // Inform user if the file is missing
-        }
+
+        Console.WriteLine("Binary file has been written successfully."); // Inform user about the completion
     }
 }
