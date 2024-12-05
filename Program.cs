@@ -1,24 +1,19 @@
 ﻿using System;
+using System.IO;
 
 class Program
 {
     static void Main()
     {
-        try
-        {
-            ValidateNumber(-1);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error: {ex.Message}");
-        }
-    }
+        string filePath = "example.txt";
 
-    static void ValidateNumber(int number)
-    {
-        if (number < 0)
+        // Create and write to the file using StreamWriter
+        using (StreamWriter writer = new StreamWriter(filePath))
         {
-            throw new ArgumentException("Number cannot be negative."); // Throw exception
+            writer.WriteLine("Hello, World!"); // Write a simple text
+            writer.WriteLine("This is a new line in the file."); // Add another line
         }
+
+        Console.WriteLine("File has been written successfully."); // Inform user about the completion
     }
 }
