@@ -1,33 +1,41 @@
 ﻿using System;
-using System.IO;
 
 class Program
 {
     static void Main()
     {
-        string filePath = "example.bin";
+        // Tạo đối tượng từ lớp Car
+        Car myCar = new Car("Toyota", "Blue", 2023);
 
-        // Check if the binary file exists before attempting to read
-        if (File.Exists(filePath))
-        {
-            // Open and read the binary file
-            using (BinaryReader reader = new BinaryReader(File.Open(filePath, FileMode.Open)))
-            {
-                int number = reader.ReadInt32(); // Read an integer
-                double value = reader.ReadDouble(); // Read a double
-                bool flag = reader.ReadBoolean(); // Read a boolean
-                string text = reader.ReadString(); // Read a string
+        // Sử dụng các phương thức của đối tượng
+        myCar.DisplayInfo();
+        myCar.Drive();
+    }
+}
 
-                // Display the read data
-                Console.WriteLine($"Integer: {number}");
-                Console.WriteLine($"Double: {value}");
-                Console.WriteLine($"Boolean: {flag}");
-                Console.WriteLine($"String: {text}");
-            }
-        }
-        else
-        {
-            Console.WriteLine("The binary file does not exist!"); // Inform user if the file is missing
-        }
+class Car
+{
+    // Fields (Dữ liệu riêng)
+    private string brand;
+    private string color;
+    private int year;
+
+    // Constructor (Hàm khởi tạo)
+    public Car(string brand, string color, int year)
+    {
+        this.brand = brand;
+        this.color = color;
+        this.year = year;
+    }
+
+    // Method (Hành vi của đối tượng)
+    public void DisplayInfo()
+    {
+        Console.WriteLine($"Brand: {brand}, Color: {color}, Year: {year}");
+    }
+
+    public void Drive()
+    {
+        Console.WriteLine("The car is now driving.");
     }
 }
