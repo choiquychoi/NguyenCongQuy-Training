@@ -1,22 +1,15 @@
 ﻿using System;
 
-// Base class
-class Animal
+class Calculator
 {
-    // Method in the base class
-    public void Eat()
+    public int Add(int a, int b)
     {
-        Console.WriteLine("This animal eats food."); // Message for base class method
+        return a + b;
     }
-}
 
-// Derived class
-class Dog : Animal
-{
-    // Method specific to the derived class
-    public void Bark()
+    public int Add(int a, int b, int c)
     {
-        Console.WriteLine("The dog barks."); // Message for derived class method
+        return a + b + c;
     }
 }
 
@@ -24,13 +17,9 @@ class Program
 {
     static void Main()
     {
-        // Create an object of the derived class
-        Dog myDog = new Dog();
+        Calculator calc = new Calculator();
 
-        // Call the method from the base class
-        myDog.Eat(); // Inherited method
-
-        // Call the method from the derived class
-        myDog.Bark(); // Method specific to Dog class
+        Console.WriteLine(calc.Add(3, 4));        // Output: 7
+        Console.WriteLine(calc.Add(3, 4, 5));     // Output: 12
     }
 }
