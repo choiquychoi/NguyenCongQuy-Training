@@ -1,41 +1,39 @@
 ﻿using System;
 
+class Person
+{
+    // Private field: hides the details of the implementation
+    private string name;
+
+    // Public property: provides controlled access to the private field
+    public string Name
+    {
+        get { return name; } // Getter: retrieve the value of the private field
+        set 
+        { 
+            if (!string.IsNullOrWhiteSpace(value)) // Validation check
+            {
+                name = value; 
+            }
+            else
+            {
+                Console.WriteLine("Name cannot be empty.");
+            }
+        }
+    }
+}
+
 class Program
 {
     static void Main()
     {
-        // Tạo đối tượng từ lớp Car
-        Car myCar = new Car("Toyota", "Blue", 2023);
+        Person person = new Person();
 
-        // Sử dụng các phương thức của đối tượng
-        myCar.DisplayInfo();
-        myCar.Drive();
-    }
-}
+        // Setting the name using the property
+        person.Name = "John";
+        Console.WriteLine($"Person's Name: {person.Name}"); // Output: Person's Name: John
 
-class Car
-{
-    // Fields (Dữ liệu riêng)
-    private string brand;
-    private string color;
-    private int year;
-
-    // Constructor (Hàm khởi tạo)
-    public Car(string brand, string color, int year)
-    {
-        this.brand = brand;
-        this.color = color;
-        this.year = year;
-    }
-
-    // Method (Hành vi của đối tượng)
-    public void DisplayInfo()
-    {
-        Console.WriteLine($"Brand: {brand}, Color: {color}, Year: {year}");
-    }
-
-    public void Drive()
-    {
-        Console.WriteLine("The car is now driving.");
+        // Trying to set an invalid value
+        person.Name = ""; // Output: Name cannot be empty.
     }
 }
