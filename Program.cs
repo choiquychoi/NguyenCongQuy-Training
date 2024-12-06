@@ -1,25 +1,22 @@
 ﻿using System;
 
-class Person
+// Base class
+class Animal
 {
-    // Private field: hides the details of the implementation
-    private string name;
-
-    // Public property: provides controlled access to the private field
-    public string Name
+    // Method in the base class
+    public void Eat()
     {
-        get { return name; } // Getter: retrieve the value of the private field
-        set 
-        { 
-            if (!string.IsNullOrWhiteSpace(value)) // Validation check
-            {
-                name = value; 
-            }
-            else
-            {
-                Console.WriteLine("Name cannot be empty.");
-            }
-        }
+        Console.WriteLine("This animal eats food."); // Message for base class method
+    }
+}
+
+// Derived class
+class Dog : Animal
+{
+    // Method specific to the derived class
+    public void Bark()
+    {
+        Console.WriteLine("The dog barks."); // Message for derived class method
     }
 }
 
@@ -27,13 +24,13 @@ class Program
 {
     static void Main()
     {
-        Person person = new Person();
+        // Create an object of the derived class
+        Dog myDog = new Dog();
 
-        // Setting the name using the property
-        person.Name = "John";
-        Console.WriteLine($"Person's Name: {person.Name}"); // Output: Person's Name: John
+        // Call the method from the base class
+        myDog.Eat(); // Inherited method
 
-        // Trying to set an invalid value
-        person.Name = ""; // Output: Name cannot be empty.
+        // Call the method from the derived class
+        myDog.Bark(); // Method specific to Dog class
     }
 }
