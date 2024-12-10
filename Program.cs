@@ -1,35 +1,24 @@
-﻿using System;
-
-class Animal
-    {
-        public virtual void Speak()
-        {
-            Console.WriteLine(" Animal is speaking. . .");
-        }
-    }
-    class Cat : Animal
-    {
-        public override void Speak()
-        {
-            Console.WriteLine(" Cat is speaking. . .");
-        }
-    }
-    class Dog : Animal
-    {
-        public override void Speak()
-        {
-            Console.WriteLine(" Dog is speaking. . .");
-        }
-    }
-class Program
+﻿// Interface
+interface IAnimal 
 {
-    static void Main()
-    {
-        Animal cat = new Cat();
-        Animal dog = new Dog();
-        cat.Speak();
-        dog.Speak();
+    void animalSound(); // interface method (does not have a body)
+}
 
-        Console.ReadLine();
+// Pig "implements" the IAnimal interface
+class Pig : IAnimal 
+{
+    public void animalSound() 
+    {
+        // The body of animalSound() is provided here
+        Console.WriteLine("The pig says: wee wee");
     }
+}
+
+class Program 
+{
+    static void Main(string[] args) 
+        {
+            Pig myPig = new Pig();  // Create a Pig object
+            myPig.animalSound();
+        }
 }
