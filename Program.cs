@@ -1,24 +1,41 @@
-﻿// Interface
-interface IAnimal 
+﻿using System;
+
+// Define the first interface
+interface IMovable
 {
-    void animalSound(); // interface method (does not have a body)
+    void Move(); // Abstract method
 }
 
-// Pig "implements" the IAnimal interface
-class Pig : IAnimal 
+// Define the second interface
+interface IWorkable
 {
-    public void animalSound() 
+    void Work(); // Abstract method
+}
+
+// Class implementing both interfaces
+class Robot : IMovable, IWorkable
+{
+    // Implement Move from IMovable
+    public void Move()
     {
-        // The body of animalSound() is provided here
-        Console.WriteLine("The pig says: wee wee");
+        Console.WriteLine("The robot is moving.");
+    }
+
+    // Implement Work from IWorkable
+    public void Work()
+    {
+        Console.WriteLine("The robot is working.");
     }
 }
 
-class Program 
+class Program
 {
-    static void Main(string[] args) 
-        {
-            Pig myPig = new Pig();  // Create a Pig object
-            myPig.animalSound();
-        }
+    static void Main()
+    {
+        Robot robot = new Robot();
+
+        // Call methods from both interfaces
+        robot.Move(); // Output: The robot is moving.
+        robot.Work(); // Output: The robot is working.
+    }
 }
