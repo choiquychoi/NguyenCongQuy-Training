@@ -1,25 +1,35 @@
 ﻿using System;
 
-class Calculator
-{
-    public int Add(int a, int b)
+class Animal
     {
-        return a + b;
+        public virtual void Speak()
+        {
+            Console.WriteLine(" Animal is speaking. . .");
+        }
     }
-
-    public int Add(int a, int b, int c)
+    class Cat : Animal
     {
-        return a + b + c;
+        public override void Speak()
+        {
+            Console.WriteLine(" Cat is speaking. . .");
+        }
     }
-}
-
+    class Dog : Animal
+    {
+        public override void Speak()
+        {
+            Console.WriteLine(" Dog is speaking. . .");
+        }
+    }
 class Program
 {
     static void Main()
     {
-        Calculator calc = new Calculator();
+        Animal cat = new Cat();
+        Animal dog = new Dog();
+        cat.Speak();
+        dog.Speak();
 
-        Console.WriteLine(calc.Add(3, 4));        // Output: 7
-        Console.WriteLine(calc.Add(3, 4, 5));     // Output: 12
+        Console.ReadLine();
     }
 }
