@@ -1,62 +1,28 @@
 ﻿using System;
 
-// Abstract class
-abstract class Shape
-{
-    public abstract double CalculateArea(); // Abstract method
-    public void Display()
-    {
-        Console.WriteLine("This is a shape."); // Normal method
-    }
-}
-
-// Derived class: Circle
-class Circle : Shape
-{
-    public double Radius { get; set; }
-
-    public Circle(double radius)
-    {
-        Radius = radius;
-    }
-
-    // Implement the abstract method
-    public override double CalculateArea()
-    {
-        return Math.PI * Radius * Radius; // Area of circle
-    }
-}
-
-// Derived class: Rectangle
-class Rectangle : Shape
-{
-    public double Width { get; set; }
-    public double Height { get; set; }
-
-    public Rectangle(double width, double height)
-    {
-        Width = width;
-        Height = height;
-    }
-
-    // Implement the abstract method
-    public override double CalculateArea()
-    {
-        return Width * Height; // Area of rectangle
-    }
-}
+// A delegate that takes a string and returns nothing
+delegate void GreetDelegate(string name);
 
 class Program
 {
+    static void GreetInEnglish(string name)
+    {
+        Console.WriteLine($"Hello, {name}!");
+    }
+
+    static void GreetInVietnamese(string name)
+    {
+        Console.WriteLine($"Xin chào, {name}!");
+    }
+
     static void Main()
     {
-        Shape circle = new Circle(5);
-        Shape rectangle = new Rectangle(4, 6);
+        // Assign the delegate to GreetInEnglish
+        GreetDelegate greet = GreetInEnglish;
+        greet("Alice"); // Output: Hello, Alice!
 
-        circle.Display();
-        Console.WriteLine($"Circle Area: {circle.CalculateArea()}"); // Output: Circle Area: 78.53981633974483
-
-        rectangle.Display();
-        Console.WriteLine($"Rectangle Area: {rectangle.CalculateArea()}"); // Output: Rectangle Area: 24
+        // Reassign the delegate to GreetInVietnamese
+        greet = GreetInVietnamese;
+        greet("Alice"); // Output: Xin chào, Alice!
     }
 }
