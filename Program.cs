@@ -1,28 +1,32 @@
 ﻿using System;
 
-// A delegate that takes a string and returns nothing
-delegate void GreetDelegate(string name);
+delegate void NotificationDelegate(string message);
 
 class Program
 {
-    static void GreetInEnglish(string name)
+    static void NotifyViaEmail(string message)
     {
-        Console.WriteLine($"Hello, {name}!");
+        Console.WriteLine($"Email notification: {message}");
     }
 
-    static void GreetInVietnamese(string name)
+    static void NotifyViaSMS(string message)
     {
-        Console.WriteLine($"Xin chào, {name}!");
+        Console.WriteLine($"SMS notification: {message}");
     }
 
     static void Main()
     {
-        // Assign the delegate to GreetInEnglish
-        GreetDelegate greet = GreetInEnglish;
-        greet("Alice"); // Output: Hello, Alice!
+        NotificationDelegate notify = NotifyViaEmail;
+        notify += NotifyViaSMS; // Thêm phương thức NotifyViaSMS vào delegate
 
-        // Reassign the delegate to GreetInVietnamese
-        greet = GreetInVietnamese;
-        greet("Alice"); // Output: Xin chào, Alice!
+        notify("You have a new message!"); 
+        // Output:
+        // Email notification: You have a new message!
+        // SMS notification: You have a new message!
+
+        notify -= NotifyViaEmail; // Loại bỏ phương thức NotifyViaEmail
+        notify("Another message!"); 
+        // Output:
+        // SMS notification: Another message!
     }
 }
