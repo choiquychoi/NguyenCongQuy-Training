@@ -1,30 +1,48 @@
 ﻿using System;
 
-// Define the first interface
-interface IMovable
+// Abstract class
+abstract class Shape
 {
-    void Move(); // Abstract method
-}
-
-// Define the second interface
-interface IWorkable
-{
-    void Work(); // Abstract method
-}
-
-// Class implementing both interfaces
-class Robot : IMovable, IWorkable
-{
-    // Implement Move from IMovable
-    public void Move()
+    public abstract double CalculateArea(); // Abstract method
+    public void Display()
     {
-        Console.WriteLine("The robot is moving.");
+        Console.WriteLine("This is a shape."); // Normal method
+    }
+}
+
+// Derived class: Circle
+class Circle : Shape
+{
+    public double Radius { get; set; }
+
+    public Circle(double radius)
+    {
+        Radius = radius;
     }
 
-    // Implement Work from IWorkable
-    public void Work()
+    // Implement the abstract method
+    public override double CalculateArea()
     {
-        Console.WriteLine("The robot is working.");
+        return Math.PI * Radius * Radius; // Area of circle
+    }
+}
+
+// Derived class: Rectangle
+class Rectangle : Shape
+{
+    public double Width { get; set; }
+    public double Height { get; set; }
+
+    public Rectangle(double width, double height)
+    {
+        Width = width;
+        Height = height;
+    }
+
+    // Implement the abstract method
+    public override double CalculateArea()
+    {
+        return Width * Height; // Area of rectangle
     }
 }
 
@@ -32,10 +50,13 @@ class Program
 {
     static void Main()
     {
-        Robot robot = new Robot();
+        Shape circle = new Circle(5);
+        Shape rectangle = new Rectangle(4, 6);
 
-        // Call methods from both interfaces
-        robot.Move(); // Output: The robot is moving.
-        robot.Work(); // Output: The robot is working.
+        circle.Display();
+        Console.WriteLine($"Circle Area: {circle.CalculateArea()}"); // Output: Circle Area: 78.53981633974483
+
+        rectangle.Display();
+        Console.WriteLine($"Rectangle Area: {rectangle.CalculateArea()}"); // Output: Rectangle Area: 24
     }
 }
