@@ -1,32 +1,35 @@
 ﻿using System;
-
-delegate void NotificationDelegate(string message);
+using System.Text;
 
 class Program
 {
-    static void NotifyViaEmail(string message)
+    delegate int MyDelegate(string s);
+    static void Main(string[] args)
     {
-        Console.WriteLine($"Email notification: {message}");
+        Console.OutputEncoding = Encoding.Unicode;           
+
+        MyDelegate showString = new MyDelegate(ShowString);            
+
+        InputAndShowName(showString);
+
+Console.ReadLine();
     }
 
-    static void NotifyViaSMS(string message)
+    static void InputAndShowName(MyDelegate showName)
     {
-        Console.WriteLine($"SMS notification: {message}");
+        Console.WriteLine("Input your name please:");
+        string name = Console.ReadLine();
+        showName(name);
     }
 
-    static void Main()
+    static int ShowString(string stringValue)
     {
-        NotificationDelegate notify = NotifyViaEmail;
-        notify += NotifyViaSMS; // Thêm phương thức NotifyViaSMS vào delegate
-
-        notify("You have a new message!"); 
-        // Output:
-        // Email notification: You have a new message!
-        // SMS notification: You have a new message!
-
-        notify -= NotifyViaEmail; // Loại bỏ phương thức NotifyViaEmail
-        notify("Another message!"); 
-        // Output:
-        // SMS notification: Another message!
+        Console.WriteLine(stringValue);
+        return 0;
     }
 }
+
+
+
+
+
