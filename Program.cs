@@ -1,35 +1,24 @@
 ﻿using System;
-using System.Text;
 
-class Program
-{
-    delegate int MyDelegate(string s);
-    static void Main(string[] args)
-    {
-        Console.OutputEncoding = Encoding.Unicode;           
+namespace CS09_Anonymous_lambda {
+    class Program {
+        public delegate int TinhToan (int a, int b);
+        static void Main (string[] args) {
 
-        MyDelegate showString = new MyDelegate(ShowString);            
+            //Gán lambda cho Func
+            Func<int, int, int> tinhtong1 = (int x, int y) => {
+                return x + y;
+            };
+            // Gán lambda cho Action
+            Action<int> thongbao = (int vl) => {
+                Console.WriteLine (vl);
+            };
 
-        InputAndShowName(showString);
+            int kq1 = tinhtong1 (5, 3); // kq1 = 8
+            int kq2 = tinhtong1 (5, 5); // kq2 = 10
+            thongbao (kq1); // In ra: 8
+            thongbao (kq2); // In ra: 10
 
-Console.ReadLine();
-    }
-
-    static void InputAndShowName(MyDelegate showName)
-    {
-        Console.WriteLine("Input your name please:");
-        string name = Console.ReadLine();
-        showName(name);
-    }
-
-    static int ShowString(string stringValue)
-    {
-        Console.WriteLine(stringValue);
-        return 0;
+        }
     }
 }
-
-
-
-
-
