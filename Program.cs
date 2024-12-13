@@ -1,24 +1,44 @@
 ﻿using System;
 
-namespace CS09_Anonymous_lambda {
-    class Program {
-        public delegate int TinhToan (int a, int b);
-        static void Main (string[] args) {
+public class Publisher
+{
+    // 1. Khai báo delegate
+    public delegate void NotifyEventHandler(string message);
 
-            //Gán lambda cho Func
-            Func<int, int, int> tinhtong1 = (int x, int y) => {
-                return x + y;
-            };
-            // Gán lambda cho Action
-            Action<int> thongbao = (int vl) => {
-                Console.WriteLine (vl);
-            };
+    // 2. Khai báo event dựa trên delegate
+    public event NotifyEventHandler Notify;
 
-            int kq1 = tinhtong1 (5, 3); // kq1 = 8
-            int kq2 = tinhtong1 (5, 5); // kq2 = 10
-            thongbao (kq1); // In ra: 8
-            thongbao (kq2); // In ra: 10
+    // Phương thức kích hoạt sự kiện
+    public void TriggerEvent()
+    {
+        Console.WriteLine("Publisher: Triggering the event...");
+        Notify?.Invoke("Hello, this is an event notification!");
+    }
+}
 
-        }
+public class Subscriber
+{
+    // Phương thức xử lý sự kiện
+    public void OnNotify(string message)
+    {
+        Console.WriteLine($"Subscriber received: {message}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Publisher publisher = new Publisher();
+        Subscriber subscriber = new Subscriber();
+
+        // 3. Đăng ký sự kiện
+        publisher.Notify += subscriber.OnNotify;
+
+        // Kích hoạt sự kiện
+        publisher.TriggerEvent();
+
+        // 4. Hủy đăng ký sự kiện (nếu cần)
+        publisher.Notify -= subscriber.OnNotify;
     }
 }
