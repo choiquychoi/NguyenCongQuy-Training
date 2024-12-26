@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj",
         "projectName": "practice C#",
-        "projectPath": "c:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Administrator\\Desktop\\practice C#\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\practice C#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
