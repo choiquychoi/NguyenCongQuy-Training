@@ -5,7 +5,7 @@ using System.Linq;
 public class Product
 {
     public int Id { get; set; }
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public int BrandId { get; set; }
 }
@@ -13,7 +13,7 @@ public class Product
 public class Brand
 {
     public int Id { get; set; }
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
 }
 
 
@@ -42,23 +42,13 @@ public class Data
 
 public class Program
 {
-    // make a example LinQ using Select clause
     public static void Main()
     {
-        var query = from p in Data.Products
-                    select new
-                    {
-                        p.Id,
-                        p.Name,
-                        p.Price,
-                        BrandName = (from b in Data.Brands
-                                    where b.Id == p.BrandId
-                                    select b.Name).FirstOrDefault()
-                    };
-
-        foreach (var item in query)
+        //make a example LinQ using tăng dần
+        var products = Data.Products.OrderBy(p => p.Price);
+        foreach (var product in products)
         {
-            Console.WriteLine($"Id: {item.Id}, Name: {item.Name}, Price: {item.Price}, BrandName: {item.BrandName}");
+            Console.WriteLine($"Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, BrandId: {product.BrandId}");
         }
     }
 }
