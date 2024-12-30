@@ -1,3 +1,6 @@
+C:\Users\Administrator\Desktop\practice C#\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Administrator\Desktop\practice C#\bin\Debug\net8.0\appsettings.json
+C:\Users\Administrator\Desktop\practice C#\bin\Debug\net8.0\practice C#.staticwebassets.runtime.json
 C:\Users\Administrator\Desktop\practice C#\bin\Debug\net8.0\practice C#.exe
 C:\Users\Administrator\Desktop\practice C#\bin\Debug\net8.0\practice C#.deps.json
 C:\Users\Administrator\Desktop\practice C#\bin\Debug\net8.0\practice C#.runtimeconfig.json
@@ -7,9 +10,22 @@ C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.Generate
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.AssemblyInfoInputs.cache
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.RazorAssemblyInfo.cache
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.RazorAssemblyInfo.cs
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.sourcelink.json
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\staticwebassets\msbuild.practice C#.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\staticwebassets\msbuild.build.practice C#.props
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.practice C#.props
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.practice C#.props
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\scopedcss\bundle\practice C#.styles.css
+C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\scopedcss\projectbundle\practice C#.bundle.scp.css
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.dll
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\refint\practice C#.dll
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.pdb
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\ref\practice C#.dll
-c:\Users\Administrator\Desktop\practice C#\obj\Debug\net8.0\practice C#.sourcelink.json
