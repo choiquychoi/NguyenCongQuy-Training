@@ -1,54 +1,84 @@
-﻿using System.Collections.Generic;
-using System;
-using System.Linq;
-
-public class Product
-{
-    public int Id { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public decimal Price { get; set; }
-    public int BrandId { get; set; }
-}
-
-public class Brand
-{
-    public int Id { get; set; }
-    public string Name { get; set; } = string.Empty;
-}
+﻿using System;
+using System.Net;
+using System.Threading;
+using System.Threading.Tasks;
 
 
-// make a
-public class Data
-{
-    public static List<Product> Products = new List<Product>
+class MyClass {
+    // chuẩn bị 1 phương thức static để thực thi công việc
+    static void DoSomeThing (int seconds, string msg, ConsoleColor color)
     {
-        new Product { Id = 1, Name = "Bàn trà", Price = 400, BrandId = 1 },
-        new Product { Id = 2, Name = "Trang Trèo", Price = 300, BrandId = 1 },
-        new Product { Id = 3, Name = "Đèn Trùm", Price = 666, BrandId = 2 },
-        new Product { Id = 4, Name = "Bàn Học", Price = 200, BrandId = 2 },
-        new Product { Id = 5, Name = "Túi da", Price = 400, BrandId = 3 },
-        new Product { Id = 6, Name = "Tủ áo", Price = 600, BrandId = 3 },
-    };
-
-    public static List<Brand> Brands = new List<Brand>
-    {
-        new Brand { Id = 1, Name = "Company AAA" },
-        new Brand { Id = 2, Name = "Company BBB" },
-        new Brand { Id = 3, Name = "Company CCC" },
-    };
-}
-
-
-
-public class Program
-{
-    public static void Main()
-    {
-        //make a example LinQ using tăng dần
-        var products = Data.Products.OrderBy(p => p.Price);
-        foreach (var product in products)
+        lock( Console.Out) 
         {
-            Console.WriteLine($"Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, BrandId: {product.BrandId}");
+            Console.ForegroundColor = color;
+            Console.WriteLine($"{msg, 10} ... Start");
+            Console.ResetColor();
+        }
+        
+        for (int i = 1; i <= seconds; i++)
+        {
+            lock( Console.Out) 
+            {
+                Console.ForegroundColor = color;
+                Console.WriteLine($"{msg, 10} {i, 2}");
+                Console.ResetColor();
+
+                Thread.Sleep(1000);
+            }
+        }
+
+        lock( Console.Out) 
+        {
+            Console.ForegroundColor = color;
+            Console.WriteLine($"{msg, 10} ... End!");
+            Console.ResetColor();
         }
     }
+
+
+    static async Task Task2() 
+    {
+         // Task 
+        Task t2 = new Task (
+            () => {
+                DoSomeThing(10, "Task 2", ConsoleColor.Magenta);
+            }
+        );
+
+        t2.Start();
+        await t2; // wait for task 2 done
+
+        Console.WriteLine("Task 2 done");
+    }
+
+    static async Task Task3 (){
+        Task t3 = new Task (
+            (object ob) => {
+                string tenTacVu = (string) ob;
+                DoSomeThing(4, tenTacVu, ConsoleColor.Blue);
+            }
+        , "Task 3");
+
+        t3.Start();
+
+        await t3;
+        Console.WriteLine("Task 3 done");
+    }
+
+        
+    static void Main( string[] args)
+    {
+        Task t2 = Task2();
+        Task t3 = Task3();
+
+        // synchronous
+        DoSomeThing(6, "Task 1", ConsoleColor.Yellow);
+
+        Task.WaitAll(t2, t3);
+
+        Console.WriteLine("Done");
+        Console.ReadKey();
+    }
 }
+
+
