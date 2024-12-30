@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\practice C#\\FirstPJ.csproj",
-      "projectName": "FirstPJ",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\practice C#\\FirstPJ.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj",
+      "projectName": "practice C#",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\practice C#\\practice C#.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\Desktop\\practice C#\\obj\\",
       "projectStyle": "PackageReference",

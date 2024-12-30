@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FirstPJ.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FirstPJ.bundle.scp.css"
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\practice C#.bundle.scp.css",
+      "PackagePath": "staticwebassets\\practice C#.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FirstPJ.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.practice C#.props",
+      "PackagePath": "build\\practice C#.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.practice C#.props",
+      "PackagePath": "buildMultiTargeting\\practice C#.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.practice C#.props",
+      "PackagePath": "buildTransitive\\practice C#.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.practice C#.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FirstPJ.props",
-      "PackagePath": "build\\FirstPJ.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FirstPJ.props",
-      "PackagePath": "buildMultiTargeting\\FirstPJ.props"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FirstPJ.props",
-      "PackagePath": "buildTransitive\\FirstPJ.props"
     }
   ],
   "ElementsToRemove": []
