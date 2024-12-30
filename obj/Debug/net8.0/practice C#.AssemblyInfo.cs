@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("practice C#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f66f8094263a49013021491e38509fa1a8a45a60")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6940d9a18c02175aaa64dc89cf948765fe7341d")]
+>>>>>>> parent of f66f809 (Add example asynchronous with async and await)
 [assembly: System.Reflection.AssemblyProductAttribute("practice C#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("practice C#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
