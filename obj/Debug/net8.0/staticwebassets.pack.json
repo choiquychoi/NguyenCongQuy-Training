@@ -5,6 +5,158 @@
       "PackagePath": "staticwebassets\\practice C#.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\css\\Chart.min.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\Chart.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\css\\animate.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\css\\authotication.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\authotication.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\css\\sidebar.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\sidebar.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\icofont\\demo.html",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\icofont\\demo.html"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\icofont\\fonts\\icofont.eot",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\icofont\\fonts\\icofont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\icofont\\fonts\\icofont.svg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\icofont\\fonts\\icofont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\icofont\\fonts\\icofont.ttf",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\icofont\\fonts\\icofont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\icofont\\fonts\\icofont.woff",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\icofont\\fonts\\icofont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\icofont\\fonts\\icofont.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\icofont\\fonts\\icofont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\icofont\\icofont.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\icofont\\icofont.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\icofont\\icofont.min.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\icofont\\icofont.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.eot",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.ijmap",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.ijmap"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.svg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.ttf",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.woff2",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont\\MaterialIcons-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\README.md",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\codepoints",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\iconfont\\material-icons.css",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\iconfont\\material-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\images\\icons\\avatar_user.jpg",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\images\\icons\\avatar_user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\images\\icons\\favicon.png",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\images\\icons\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\Chart.bundle.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\Chart.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\chartfunction.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\chartfunction.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\ckeditor.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\ckeditor.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\script.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\Assets\\Admin\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\Assets\\Admin\\js\\wow.min.js"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\Desktop\\practice C#\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
