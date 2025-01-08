@@ -1,5 +1,6 @@
 ﻿    using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Model;
 
 namespace practice_C_.Areas.Admin.Controllers
 {
@@ -28,38 +29,22 @@ namespace practice_C_.Areas.Admin.Controllers
 
         // POST: CategoryController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Category collection)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    // Thêm logic lưu dữ liệu ở đây
+                    return RedirectToAction("Index");
+                }
+                return View(collection);
             }
             catch
             {
                 return View();
             }
-        }
 
-        // GET: CategoryController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: CategoryController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         // GET: CategoryController/Delete/5
