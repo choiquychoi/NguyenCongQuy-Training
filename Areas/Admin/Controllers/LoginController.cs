@@ -20,9 +20,9 @@ namespace OnlineShop.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var dao = new UserDao();
-                var result = dao.Login(model.UserName, model.Password);
+                var result = dao.Login(model.UserName, Encryptor.MD5Hash(model.Password));
 
-                if (result)
+                if (result == 1)
                 {
                     var user = dao.GetById(model.UserName);
                     var userSession = new UserLogin();
@@ -32,9 +32,21 @@ namespace OnlineShop.Areas.Admin.Controllers
                     HttpContext.Session.SetString("USER_SESSION", Newtonsoft.Json.JsonConvert.SerializeObject(userSession));
                     return RedirectToAction("Index", "Home", new { area = "Admin" });
                 }
+                else if (result == 0)
+                {
+                    ModelState.AddModelError("", "Username does not exist");
+                }
+                else if (result == -1)
+                {
+                    ModelState.AddModelError("", "Account is disabled");
+                }
+                else if (result == -2)
+                {
+                    ModelState.AddModelError("", "password is incorrect");
+                }
                 else
                 {
-                    ModelState.AddModelError("", "Username or password is incorrect");
+                    ModelState.AddModelError("", "Login failed");
                 }
             }
             return View(model   );
