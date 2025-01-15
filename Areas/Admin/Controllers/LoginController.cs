@@ -49,7 +49,7 @@ namespace OnlineShop.Areas.Admin.Controllers
                     ModelState.AddModelError("", "Login failed");
                 }
             }
-            return View(model   );
+            return View(model);
 
         }
     }
