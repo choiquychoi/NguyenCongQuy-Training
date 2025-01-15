@@ -6,12 +6,20 @@ using OnlineShop.Common;
 namespace OnlineShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class UserController : BaseController
+    public class UserController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(int page = 1, int pageSize = 10)
         {
-            return View();
+            var dao = new UserDao();
+            var model = dao.ListAllPaging(page, pageSize);
+            return View(model);
         }
+
+        public IActionResult Edit(int id)
+        { 
+            var user = new UserDao().ViewDetail(id);
+            return View(user);
+        } 
 
         [HttpGet]
         public IActionResult Create()
