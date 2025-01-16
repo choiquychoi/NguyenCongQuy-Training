@@ -4,6 +4,7 @@ using OnlineShop.Common;
 
 namespace OnlineShop.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class BaseController : Controller
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)

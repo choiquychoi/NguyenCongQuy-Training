@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.AspNetCore.Session": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -66,13 +70,13 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "PagedList": {
+            "PagedList.Core": {
               "target": "Package",
-              "version": "[1.17.0, )"
+              "version": "[1.17.4, )"
             },
-            "PagedList.Mvc": {
+            "PagedList.Core.Mvc": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
@@ -141,6 +145,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -168,10 +176,6 @@
             "PagedList.Core.Mvc": {
               "target": "Package",
               "version": "[3.0.0, )"
-            },
-            "PagedList.Mvc": {
-              "target": "Package",
-              "version": "[4.5.0, )"
             },
             "jQuery.Validation": {
               "target": "Package",

@@ -8,13 +8,14 @@
     ".NETCoreApp,Version=v8.0": {
       "OnlineShop/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.3.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
           "Microsoft.jQuery.Unobtrusive.Validation": "4.0.0",
           "Model": "1.0.0",
           "PagedList": "1.17.0",
-          "PagedList.Mvc": "4.5.0",
+          "PagedList.Core.Mvc": "3.0.0",
           "jQuery.Validation": "1.21.0"
         },
         "runtime": {
@@ -600,6 +601,50 @@
       "jQuery.Validation/1.21.0": {
         "dependencies": {
           "jQuery": "1.8.0"
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.3.0": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "3.3.0",
+          "Microsoft.AspNet.WebPages": "3.3.0"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {
+            "assemblyVersion": "5.3.0.0",
+            "fileVersion": "5.3.61130.707"
+          }
+        }
+      },
+      "Microsoft.AspNet.Razor/3.3.0": {
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.61130.707"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.3.0": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "3.3.0",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.61130.707"
+          },
+          "lib/net45/System.Web.WebPages.Deployment.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.61130.707"
+          },
+          "lib/net45/System.Web.WebPages.Razor.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.61130.707"
+          },
+          "lib/net45/System.Web.WebPages.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.61130.707"
+          }
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {},
@@ -1681,6 +1726,14 @@
           }
         }
       },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20105.407"
+          }
+        }
+      },
       "Microsoft.Win32.Registry/4.5.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
@@ -1830,14 +1883,22 @@
           }
         }
       },
-      "PagedList.Mvc/4.5.0": {
+      "PagedList.Core/1.17.4": {
+        "runtime": {
+          "lib/netcoreapp1.0/PagedList.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PagedList.Core.Mvc/3.0.0": {
         "dependencies": {
-          "PagedList": "1.17.0"
+          "PagedList.Core": "1.17.4"
         },
         "runtime": {
-          "lib/net40/PagedList.Mvc.dll": {
-            "assemblyVersion": "4.5.0.0",
-            "fileVersion": "4.5.0.0"
+          "lib/netcoreapp3.0/PagedList.Core.Mvc.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
           }
         }
       },
@@ -2163,10 +2224,11 @@
       },
       "Model/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.Mvc": "5.3.0",
           "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
-          "PagedList": "1.17.0",
-          "PagedList.Mvc": "4.5.0"
+          "PagedList.Core": "1.17.4",
+          "PagedList.Core.Mvc": "3.0.0"
         },
         "runtime": {
           "Model.dll": {
@@ -2560,6 +2622,27 @@
       "sha512": "sha512-bXkjFal9Ec4vwirRVF1sQgK5MtDW/o3H22rzocW9+0O9ParIAkrzW9RtRZVMB6J5lo+X7mRduFwi6TzFqrR0pQ==",
       "path": "jquery.validation/1.21.0",
       "hashPath": "jquery.validation.1.21.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Mvc/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q1LcXRqTPmbXJAdf45PsxI6JYnCQP4vBfPCgDFd4dYf8ojxFTo4PH333PC4TzbOqRHxrUWGwgBdcR5T2jNwpHQ==",
+      "path": "microsoft.aspnet.mvc/5.3.0",
+      "hashPath": "microsoft.aspnet.mvc.5.3.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Razor/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5vJ0UKE/n381qcaKwFHxCwzb/YVuHzrm155iTgQhiv7+xdg2PE+54u+NPqu6C9AeRVOiwbh8/EOZwD16bLvWkg==",
+      "path": "microsoft.aspnet.razor/3.3.0",
+      "hashPath": "microsoft.aspnet.razor.3.3.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebPages/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2ATJrA8KNx2EpBWNjwy4P+NjQ06cZWjYsTZ5NqGNIHaU/i3NKmtpoaE90NGmVRaKF5rryGfADnvPQ56f61OuWg==",
+      "path": "microsoft.aspnet.webpages/3.3.0",
+      "hashPath": "microsoft.aspnet.webpages.3.3.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/2.2.0": {
       "type": "package",
@@ -3044,6 +3127,13 @@
       "path": "microsoft.visualstudio.web.codegenerators.mvc/8.0.7",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.8.0.7.nupkg.sha512"
     },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "path": "microsoft.web.infrastructure/1.0.0",
+      "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
+    },
     "Microsoft.Win32.Registry/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -3142,12 +3232,19 @@
       "path": "pagedlist/1.17.0",
       "hashPath": "pagedlist.1.17.0.nupkg.sha512"
     },
-    "PagedList.Mvc/4.5.0": {
+    "PagedList.Core/1.17.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D0M4qW2g4a9cwG8ozIKUnJheCrm5GpFTceqUl63AXWaAVnTgk+TysZYUOGMsBRuzid8aF+/E8b0bXM6+90jiEw==",
-      "path": "pagedlist.mvc/4.5.0",
-      "hashPath": "pagedlist.mvc.4.5.0.nupkg.sha512"
+      "sha512": "sha512-Me111vdmlPp4GGeHqvNlnv4Raq1f1F77fDsJebuKsHCZXG4v4kMDzd5h1YVDv/Q7q9DuVgueR9mxp7eO7Yj4LA==",
+      "path": "pagedlist.core/1.17.4",
+      "hashPath": "pagedlist.core.1.17.4.nupkg.sha512"
+    },
+    "PagedList.Core.Mvc/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cfMopTUyfyDcZ/HL58w9DWmlb6M9yYYaJ0i3c1j8bGeZCHRyfX3Y5rDnPa1olFdqJmh8sRIx2aKMczGe++E9sA==",
+      "path": "pagedlist.core.mvc/3.0.0",
+      "hashPath": "pagedlist.core.mvc.3.0.0.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",

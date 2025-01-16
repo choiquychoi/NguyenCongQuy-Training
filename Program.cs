@@ -39,9 +39,13 @@ app.UseAuthorization();
 builder.Services.AddSession();
 app.UseSession();
 
-app.MapControllerRoute(
-     name: "areas",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "areas",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"); // {id?} để hỗ trợ tham số id
+});
+
 
 app.MapControllerRoute(
     name: "default",

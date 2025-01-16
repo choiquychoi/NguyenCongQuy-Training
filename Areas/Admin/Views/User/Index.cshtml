@@ -1,5 +1,5 @@
-﻿@model PagedList.IPagedList<Model.EF.User>
-@using PagedList.Mvc;  
+﻿@model PagedList.Core.IPagedList<Model.EF.User>;
+@using PagedList.Core.Mvc;
 
 @{
     ViewData["Title"] = "Index";
@@ -30,8 +30,9 @@
                             {
                                 <tr>
                                     <td>
-                                        <a href="/User/Edit/@item.Id">Edit</a>
-                                        <a href="/User/Delete/@item.Id">Delete</a>
+                                        <a href="/Admin/User/Edit/@item.Id">Edit</a>
+                                        |
+                                        <a href="/Admin/User/Delete/@item.Id">Delete</a>
                                     </td>
                                     <td>@item.UserName</td>
                                     <td>@item.Name</td>
@@ -39,7 +40,6 @@
                                 </tr>
                             }
                     </table>
-                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
                 </div>
             </div>
         </div>
