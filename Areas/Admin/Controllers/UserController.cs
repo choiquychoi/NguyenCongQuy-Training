@@ -58,7 +58,6 @@ namespace OnlineShop.Areas.Admin.Controllers
             {
                 var dao = new UserDao();
 
-                // Hash mật khẩu nếu mật khẩu thay đổi
                 if (!string.IsNullOrEmpty(user.Password))
                 {
                     user.Password = Encryptor.MD5Hash(user.Password);
@@ -71,11 +70,23 @@ namespace OnlineShop.Areas.Admin.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Cập nhật thông tin người dùng thất bại.");
+                    ModelState.AddModelError("", " Update a User unsuccessfully");
                 }
             }
 
-            return View(user); // Trả lại view với dữ liệu cũ nếu có lỗi
+            return View(user);
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var dao = new UserDao();
+            var user = dao.ViewDetail(id);
+            if (user == null)
+            {
+                return RedirectToAction("Index", "User");
+            }
+            dao.Delete(user);
+            return RedirectToAction("Index", "User");
         }
 
     }

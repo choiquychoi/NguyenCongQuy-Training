@@ -32,7 +32,7 @@
                                     <td>
                                         <a href="/Admin/User/Edit/@item.Id">Edit</a>
                                         |
-                                        <a href="/Admin/User/Delete/@item.Id">Delete</a>
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
                                     </td>
                                     <td>@item.UserName</td>
                                     <td>@item.Name</td>
