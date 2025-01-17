@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CKSource.CKFinder.Connector.Core" Version="3.5.2" />
     <PackageReference Include="jQuery.Validation" Version="1.21.0" />
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -29,6 +31,32 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="UploadedFiles\" />
+    <Folder Include="wwwroot\assets\admin\js\plugins\ckfinder\App_Data\" />
+    <Folder Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.WebApp\userfiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.Plugin.DiskQuota\CKFinder.Connector.Plugin.DiskQuota.csproj" />
+    <None Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.Plugin.GetFileInfo\CKFinder.Connector.Plugin.GetFileInfo.csproj" />
+    <None Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.Plugin.UserActionsLogger\CKFinder.Connector.Plugin.UserActionsLogger.csproj" />
+    <None Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.Plugin.Watermark\CKFinder.Connector.Plugin.Watermark.csproj" />
+    <None Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.Samples.sln" />
+    <None Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.WebApp\CKFinder.Connector.WebApp.csproj" />
+    <None Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.WebApp\CKFinder.Connector.WebApp.csproj.user" />
+    <None Include="wwwroot\assets\admin\js\plugins\ckfinder\src\CKFinder.Connector.WebApp\Properties\PublishProfiles\FolderProfile.pubxml.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CKSource.CKFinder.Connector.Config">
+      <HintPath>wwwroot\assets\admin\js\plugins\ckfinder\bin\CKSource.CKFinder.Connector.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="CKSource.CKFinder.Connector.Core">
+      <HintPath>wwwroot\assets\admin\js\plugins\ckfinder\bin\CKSource.CKFinder.Connector.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CKSource.CKFinder.Connector.Host.Owin">
+      <HintPath>wwwroot\assets\admin\js\plugins\ckfinder\bin\CKSource.CKFinder.Connector.Host.Owin.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

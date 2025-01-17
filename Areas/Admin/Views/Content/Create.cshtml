@@ -1,0 +1,161 @@
+﻿@model Model.EF.Content
+
+
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var selectList = ViewBag.YourSelectList as IEnumerable<SelectListItem> ?? new List<SelectListItem>();
+}
+@section header {
+    Create
+}
+
+@section jsFooter {
+    <script>
+        $(document).ready(function () {
+            $("#btnSelectImage").on('click', function (e) {
+                e.preventDefault();
+                CKFinder.popup({
+                    chooseFiles: true,
+                    onInit: function (finder) {
+                        finder.on('files:choose', function (evt) {
+                            var file = evt.data.files.first();
+                            $("#txtImage").val(file.getUrl()); // Gắn URL file vào textbox
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+@using (Html.BeginForm("Create", "ContentController", FormMethod.Post))
+{
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+    <hr />
+
+    @Html.DropDownList("YourSelectList", selectList, "Select an option", new { @class = "form-control" })
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Name, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.MetaTitle, new { @class = "control-label" })
+                    </div>
+                    @Html.PasswordFor(m => m.MetaTitle, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.MetaTitle, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Description, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.Description, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Description, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Image, new { @class = "control-label" })
+                    @Html.TextBoxFor(m => m.Image, new { htmlAttributes = new { @class = "form-control", @id = "txtImage" }, id = "txtImage" })
+                    <a id="btnSelectImage" href="#">Pick ảnh</a>
+                    @Html.ValidationMessageFor(m => m.Image, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CategoryId, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.DropDownList("CategoryId", ViewBag.CategoryId as SelectList, "Select Category", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.CategoryId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Detail, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.Detail, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Detail, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Warranty, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.Warranty, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Warranty, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CreatedDate, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.CreatedDate, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.CreatedDate, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CreatedBy, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.CreatedBy, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.CreatedBy, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ModifiedDate, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.ModifiedDate, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.ModifiedDate, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ModifiedBy, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.ModifiedBy, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.ModifiedBy, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.MetaKeywords, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.MetaKeywords, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.MetaKeywords, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.MetaDescriptions, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.MetaDescriptions, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.MetaDescriptions, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Status)
+                    @Html.EditorFor(m => m.Status)
+                    @Html.ValidationMessageFor(m => m.Status, "")
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.TopHot, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.TopHot, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.TopHot, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ViewCount, new { @class = "control-label" })
+                    @Html.EditorFor(m => m.ViewCount, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.ViewCount, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+}

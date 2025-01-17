@@ -33,7 +33,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
+app.UseStaticFiles();
 app.UseAuthorization();
 
 builder.Services.AddSession();
@@ -43,7 +44,7 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
         name: "areas",
-        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"); // {id?} để hỗ trợ tham số id
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"); 
 });
 
 

@@ -1,0 +1,138 @@
+﻿@model Model.EF.Category
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header {
+    Create
+}
+
+
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Name, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.MetaTitle, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.MetaTitle, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.MetaTitle, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ParentId, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.ParentId, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.ParentId, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.DisplayOrder, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.DisplayOrder, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.DisplayOrder, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.SeoTitle, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.SeoTitle, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.SeoTitle, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CreatedDate, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.CreatedDate, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.CreatedDate, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.CreatedBy, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.CreatedBy, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.CreatedBy, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ModifiedDate, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.ModifiedDate, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.ModifiedDate, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ModifiedBy, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.ModifiedBy, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.ModifiedBy, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.MetaKeywords, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.MetaKeywords, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.MetaKeywords, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.MetaDescriptions, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.MetaDescriptions, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.MetaDescriptions, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Status, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.Status, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Status, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ShowOnHome, new { @class = "control-label" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(m => m.ShowOnHome, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.ShowOnHome, "", new { @class = "text-danger" })
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+}
