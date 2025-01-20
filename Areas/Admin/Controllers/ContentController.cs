@@ -16,22 +16,49 @@ namespace OnlineShop.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            var model = new Content();
             SetViewBag();
+            var model = new Content(); // Khởi tạo model
             return View(model);
         }
 
+        [HttpGet]
+        public IActionResult Edit(long id)
+        {
+            var dao = new ContentDao();
+            var content = dao.GetById(id);
+            SetViewBag(content.CategoryId);
+            return View();
+        }
 
+        [HttpPost]
+        public IActionResult Edit(Content Model)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            SetViewBag(Model.CategoryId);
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Create(Content Model) 
+        {
+            if (ModelState.IsValid)
+            {
+                
+            }
+            SetViewBag();
+            var model = new Content(); // Khởi tạo model
+            return View();
+        }
 
         public void SetViewBag(long? selectedId = null)
         {
             var dao = new CategoryDao();
-            var categories = dao.ListAll();
-            if (categories == null || !categories.Any())
-            {
-                throw new Exception("Không tìm thấy danh mục nào trong cơ sở dữ liệu!");
-            }
-            ViewBag.CategoryId = new SelectList(categories, "ID", "Name", selectedId);
+            ViewBag.CategoryId = new SelectList(dao.ListAll(), "Id", "Name", selectedId);
         }
+
     }
 }

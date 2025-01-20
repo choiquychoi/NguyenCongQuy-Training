@@ -3,25 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CDFB8C6-A350-4D9A-A7F7-029BF3716C0E}|..\\Model\\Model.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\model\\ef\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\onlineshop\\areas\\admin\\views\\content\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|solutionrelative:areas\\admin\\views\\content\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CDFB8C6-A350-4D9A-A7F7-029BF3716C0E}|..\\Model\\Model.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\model\\ef\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\onlineshop\\areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|solutionrelative:areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\onlineshop\\areas\\admin\\controllers\\contentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|solutionrelative:areas\\admin\\controllers\\contentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\onlineshop\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|solutionrelative:areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\onlineshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CDFB8C6-A350-4D9A-A7F7-029BF3716C0E}|..\\Model\\Model.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\model\\ef\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CDFB8C6-A350-4D9A-A7F7-029BF3716C0E}|..\\Model\\Model.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\model\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\onlineshop\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|solutionrelative:areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\onlineshop\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|solutionrelative:areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D06EA94-648E-49E5-8C4C-1139BB624882}|OnlineShop.csproj|c:\\users\\administrator\\desktop\\practice asp.net\\onlineshop\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -58,80 +67,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Content.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\EF\\Content.cs",
-              "RelativeDocumentMoniker": "..\\Model\\EF\\Content.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\EF\\Content.cs",
-              "RelativeToolTip": "..\\Model\\EF\\Content.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T08:58:44.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\EF\\Category.cs",
-              "RelativeDocumentMoniker": "..\\Model\\EF\\Category.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\EF\\Category.cs",
-              "RelativeToolTip": "..\\Model\\EF\\Category.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA9wCEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T08:37:58.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\Content\\Create.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Content\\Create.cshtml",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\Content\\Create.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Content\\Create.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-17T07:17:46.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Create.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-17T07:15:49.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Create.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-17T07:15:16.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Model",
+              "DocumentIndex": 9,
+              "Title": "Model.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\Model.csproj",
               "RelativeDocumentMoniker": "..\\Model\\Model.csproj",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\Model.csproj",
               "RelativeToolTip": "..\\Model\\Model.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-17T06:39:35.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T06:39:35.058Z"
             },
             {
               "$type": "Document",
@@ -141,14 +97,103 @@
               "RelativeDocumentMoniker": "..\\Model\\DAO\\CategoryDao.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\DAO\\CategoryDao.cs",
               "RelativeToolTip": "..\\Model\\DAO\\CategoryDao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T06:25:28.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContentController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Controllers\\ContentController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ContentController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Controllers\\ContentController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ContentController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T06:24:04.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:57:34.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\EF\\Category.cs",
+              "RelativeDocumentMoniker": "..\\Model\\EF\\Category.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\EF\\Category.cs",
+              "RelativeToolTip": "..\\Model\\EF\\Category.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwCEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T08:37:58.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:33:22.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T01:33:30.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T07:15:16.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T07:15:49.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UserDao.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\Model\\DAO\\UserDao.cs",
               "RelativeDocumentMoniker": "..\\Model\\DAO\\UserDao.cs",
@@ -156,25 +201,11 @@
               "RelativeToolTip": "..\\Model\\DAO\\UserDao.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T04:50:54.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T04:50:54.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContentController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Controllers\\ContentController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ContentController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Controllers\\ContentController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\ContentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T06:24:04.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
@@ -182,12 +213,11 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAADEAAAAAAAAAAAAIwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-17T03:00:04.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T03:00:04.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "_Navigation.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\Areas\\Admin\\Views\\Shared\\_Navigation.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_Navigation.cshtml",
@@ -195,8 +225,7 @@
               "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_Navigation.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-17T02:59:51.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T02:59:51.37Z"
             }
           ]
         }

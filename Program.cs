@@ -19,6 +19,11 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true; // Bắt buộc cookie
 });
 
+builder.Services.AddAntiforgery(options =>
+{
+    options.HeaderName = "X-CSRF-TOKEN";
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,6 +41,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseStaticFiles();
 app.UseAuthorization();
+app.UseAntiforgery();
 
 builder.Services.AddSession();
 app.UseSession();
