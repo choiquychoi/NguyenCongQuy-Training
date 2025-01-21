@@ -5,6 +5,234 @@
       "PackagePath": "staticwebassets\\OnlineShop.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\css\\flexslider.css",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\css\\flexslider.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\css\\form.css",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\css\\form.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\css\\memenu.css",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\css\\memenu.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\fonts\\Dosis-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\fonts\\Dosis-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\fonts\\Dosis-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\fonts\\Dosis-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\fonts\\Dosis-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\fonts\\Dosis-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\b-arrow.png",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\b-arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\bnr.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\bnr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\bnr2.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\bnr2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\bnr3.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\bnr3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\close_1.png",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\close_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\do.png",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\do.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\icon2.png",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\icon2.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img-sprite.png",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img-sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img1.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img2.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img3.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img4.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img5.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img6.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img7.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\img8.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\ofr.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\ofr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\ofr2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\ofr2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\ofr3.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\ofr3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p1.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p10.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p11.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p12.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p2.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p3.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p4 copy.JPG",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p4 copy.JPG"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p4.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p5.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p6.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p7.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p8.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\p9.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\p9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\si.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\si.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\si2.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\si2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\si3.jpg",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\si3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\social.png",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\social.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\images\\sp.png",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\images\\sp.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\imagezoom.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\imagezoom.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\jquery.flexisel.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\jquery.flexisel.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\jquery.flexslider.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\jquery.flexslider.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\jquery.jscrollpane.min.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\jquery.jscrollpane.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\memenu.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\memenu.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\responsiveslides.min.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\responsiveslides.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\OShopCSS\\js\\simpleCart.min.js",
+      "PackagePath": "staticwebassets\\assets\\OShopCSS\\js\\simpleCart.min.js"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\Desktop\\practice ASP.net\\OnlineShop\\wwwroot\\assets\\admin\\css\\Chart.min.css",
       "PackagePath": "staticwebassets\\assets\\admin\\css\\Chart.min.css"
     },

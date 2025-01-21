@@ -1,31 +1,20 @@
-using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using OnlineShop.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using Model.DAO;
 
-namespace OnlineShop.Controllers;
-
-public class HomeController : Controller
+namespace OnlineShop.Controllers
 {
-    private readonly ILogger<HomeController> _logger;
+	public class HomeController : Controller
+	{
+		public IActionResult Index()
+		{
+			return View();
+		}
 
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
-
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
+		[ChildActionOnly]
+		public IActionResult MainMenu()
+		{
+			var model = new MenuDao().ListByGroupId(1);
+			return PartialView();
+		}
+	}
 }
