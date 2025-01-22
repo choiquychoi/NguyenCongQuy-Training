@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using Model.DAO;
+using Model.EF;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,10 @@ builder.Services.AddControllersWithViews()
     {
         options.HtmlHelperOptions.ClientValidationEnabled = true;
     });
+
+builder.Services.AddDbContext<OnlineShopDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 
 builder.Services.AddSession(options =>
@@ -23,6 +30,8 @@ builder.Services.AddAntiforgery(options =>
 {
     options.HeaderName = "X-CSRF-TOKEN";
 });
+
+builder.Services.AddScoped<MenuDao>();
 
 var app = builder.Build();
 

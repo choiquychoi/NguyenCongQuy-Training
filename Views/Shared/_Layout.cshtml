@@ -32,60 +32,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--header-->	
 <script src="~/assets/OShopCSS/js/responsiveslides.min.js"></script>
 <script>  
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: false,
-      });
-    });
-  </script>
-  
+	$(function () {
+	$("#slider").responsiveSlides({
+		auto: true,
+		nav: true,
+		speed: 500,
+		namespace: "callbacks",
+		pager: false,
+	});
+	});
+</script>
+
 <div class="header-top">
-	 <div class="header-bottom">			
+	<div class="header-bottom">			
 				<div class="logo">
 					<h1><a href="~/assets/OShopCSS/index.html">Lighting</a></h1>					
 				</div>
-			 <!---->
+			<!---->
 			@await Html.PartialAsync("MainMenu")
-			 <!---->
-			 <div class="cart box_1">
-				 <a href="~/assets/OShopCSS/checkout.html">
+			<!---->
+			<div class="cart box_1">
+				<a href="~/assets/OShopCSS/checkout.html">
 					<div class="total">
 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)</div>
 					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 				</a>
 				<p><a href="~/assets/OShopCSS/javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-			 	<div class="clearfix"> </div>
-			 </div>
-			 <div class="clearfix"> </div>
-			 <!---->			 
-			 </div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<!---->			 
+			</div>
 			<div class="clearfix"> </div>
 </div>
 <!---->	
 @RenderBody()
 <!---->
 <div class="subscribe">
-	 <div class="container">
-		 <h3>Newsletter</h3>
-		 <form>
-			 <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-			 <input type="submit" value="Subscribe">
-		 </form>
-	 </div>
+	<div class="container">
+		<h3>Newsletter</h3>
+		<form>
+			<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+			<input type="submit" value="Subscribe">
+		</form>
+	</div>
 </div>
 <!---->
 <div class="footer">
-	 <div class="container">
-		 <div class="footer-grids">
-			 <div class="col-md-3 about-us">
-				 <h3>About Us</h3>
-				 <p>Maecenas nec auctor sem. Vivamus porttitor tincidunt elementum nisi a, euismod rhoncus urna. Curabitur scelerisque vulputate arcu eu pulvinar. Fusce vel neque diam</p>
-			 </div>
-			 <div class="col-md-3 ftr-grid">
+	<div class="container">
+		<div class="footer-grids">
+			<div class="col-md-3 about-us">
+				<h3>About Us</h3>
+				<p>Maecenas nec auctor sem. Vivamus porttitor tincidunt elementum nisi a, euismod rhoncus urna. Curabitur scelerisque vulputate arcu eu pulvinar. Fusce vel neque diam</p>
+			</div>
+			<div class="col-md-3 ftr-grid">
 					<h3>Information</h3>
 					<ul class="nav-bottom">
 						<li><a href="~/assets/OShopCSS/#">Track Order</a></li>
@@ -94,8 +94,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="~/assets/OShopCSS/#">Our Stores</a></li>
 						<li><a href="~/assets/OShopCSS/#">Best Sellers</a></li>	
 					</ul>					
-			 </div>
-			 <div class="col-md-3 ftr-grid">
+			</div>
+			<div class="col-md-3 ftr-grid">
 					<h3>More Info</h3>
 					<ul class="nav-bottom">
 						<li><a href="~/assets/OShopCSS/login.html">Login</a></li>
@@ -104,8 +104,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="~/assets/OShopCSS/#">Shipping</a></li>
 						<li><a href="~/assets/OShopCSS/#">Membership</a></li>	
 					</ul>					
-			 </div>
-			 <div class="col-md-3 ftr-grid">
+			</div>
+			<div class="col-md-3 ftr-grid">
 					<h3>Categories</h3>
 					<ul class="nav-bottom">
 						<li><a href="~/assets/OShopCSS/#">Car Lights</a></li>
@@ -114,25 +114,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="~/assets/OShopCSS/#">Wall Lights</a></li>
 						<li><a href="~/assets/OShopCSS/#">Protectors</a></li>	
 					</ul>					
-			 </div>
-			 <div class="clearfix"></div>
-		 </div>
-	 </div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
 </div>
 <div class="copywrite">
-	 <div class="container">
-		 <div class="copy">
-			 <p>© 2015 Lighting. All Rights Reserved | Design by  <a href="~/assets/OShopCSS/http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-		 </div>
-		 <div class="social">							
+	<div class="container">
+		<div class="copy">
+			<p>© 2015 Lighting. All Rights Reserved | Design by  <a href="~/assets/OShopCSS/http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		</div>
+		<div class="social">							
 				<a href="~/assets/OShopCSS/#"><i class="facebook"></i></a>
 				<a href="~/assets/OShopCSS/#"><i class="twitter"></i></a>
 				<a href="~/assets/OShopCSS/#"><i class="dribble"></i></a>	
 				<a href="~/assets/OShopCSS/#"><i class="google"></i></a>	
 				<a href="~/assets/OShopCSS/#"><i class="youtube"></i></a>	
-		 </div>
-		 <div class="clearfix"></div>
-	 </div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
 </div>
 <!---->
 </body>
